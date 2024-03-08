@@ -37,7 +37,7 @@ class Contract:
             raise TypeError("Book must be an instance of Book class")
         if not isinstance(date, str):
             raise TypeError("Date must be a string")
-        if not isinstance(royalties, int) and not isinstance(royalties, float):  # Adjusted to check for float as well
+        if not isinstance(royalties, int) and not isinstance(royalties, float):
             raise TypeError("Royalties must be an integer or float")
 
         self.author = author
